@@ -4,6 +4,9 @@ import 'package:hyber_market/core/utils/app_colors.dart';
 import 'package:hyber_market/core/utils/app_text_styles.dart';
 import 'package:hyber_market/core/widgets/custom_button.dart';
 import 'package:hyber_market/core/widgets/custom_text_form_field.dart';
+import 'package:hyber_market/features/auth/presentation/views/widgets/or_divider.dart';
+
+import 'dont_have_account_widget.dart';
 
 class LoginViewBody extends StatelessWidget {
   const LoginViewBody({super.key});
@@ -40,31 +43,10 @@ class LoginViewBody extends StatelessWidget {
             ),
             SizedBox(height: 24),
             CustomButton(text: "تسجيل الدخول", onPressed: () {}),
-            Text.rich(
-              TextSpan(
-                children: [
-                  TextSpan(
-                    text: 'لا تمتلك حساب؟',
-                    style: TextStyles.semiBold16.copyWith(
-                      color: const Color(0xFF949D9E),
-                    ),
-                  ),
-                  TextSpan(
-                    text: ' ',
-                    style: TextStyles.semiBold16.copyWith(
-                      color: const Color(0xFF616A6B),
-                    ),
-                  ),
-                  TextSpan(
-                    text: 'قم بإنشاء حساب',
-                    style: TextStyles.semiBold16.copyWith(
-                      color: AppColors.primaryColor,
-                    ),
-                  ),
-                ],
-              ),
-              textAlign: TextAlign.center,
-            ),
+            SizedBox(height: 24),
+            DontHaveAnAccountWidget(),
+            SizedBox(height: 24),
+            OrDivider(),
           ],
         ),
       ),
