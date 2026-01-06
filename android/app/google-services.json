@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "94075427150",
+    "project_id": "hyber-market-flutter",
+    "storage_bucket": "hyber-market-flutter.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:94075427150:android:cab21f710bfa0b5126e61f",
+        "android_client_info": {
+          "package_name": "com.example.hyber_market"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyChlJE6AVPHTGTADlhGXfgE8wzIrzK-fps"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
